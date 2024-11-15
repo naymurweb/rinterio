@@ -26,10 +26,10 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
                         "primary-color": 'rgb(171, 239, 95)',
                         "primary-bg": 'rgba(171, 239, 95, 0.5)',
-                        black: 'rgb(28, 28, 28);'
+                        "gray-bg": 'rgb(244, 244, 244)',
+
                     },
                     fontFamily: {
                         manrope: ["Manrope", "sans-serif"]
@@ -96,31 +96,103 @@
         <!-- banner -->
         <div class="hero my-10">
             <div class="hero-content text-center">
-              <div class="lg:w-3/4">
-                <div class="flex justify-center">
-                    <img src="./assets/banner.png" alt="">
-                </div>
-                <h1 class="text-3xl md:text-5xl font-bold">A barn house of this design has a striking appearance</h1>
-                <p class="py-6">
-                  The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
-                </p>
-                <div class="flex justify-center">
-                    <button class="btn rounded-full flex items-center gap-3 bg-primary-bg">
-                        <h3 class="font-bold text-xl">View Details</h3>
-                        <i
-                            class="fa-solid fa-arrow-right bg-primary-color text-black text-base -rotate-45 p-1 px-2 rounded-full"></i>
-                    </button>
-                </div>
-              <div>
-            
-              </div>
-              </div>
-            </div>
-          </div>
+                <div class="lg:w-3/4">
+                    <div class="flex justify-center">
+                        <img src="./assets/banner.png" alt="">
+                    </div>
+                    <h1 class="text-3xl md:text-5xl font-bold">A barn house of this design has a striking appearance
+                    </h1>
+                    <p class="py-6">
+                        The barn house captivates with its blend of rustic charm and modern sophistication, featuring
+                        weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+                    </p>
+                    <div class="flex justify-center">
+                        <button class="btn rounded-full flex items-center gap-3 bg-primary-bg">
+                            <h3 class="font-bold text-xl">View Details</h3>
+                            <i
+                                class="fa-solid fa-arrow-right bg-primary-color text-black text-base -rotate-45 p-1 px-2 rounded-full"></i>
+                        </button>
+                    </div>
+                    <div>
 
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
     <main>
+        <!-- About Us section -->
+        <section class="my-20 bg-gray-bg">
+            <div class="hero px-5 py-20">
+                <div class="flex flex-col-reverse lg:flex-row-reverse  justify-between items-center gap-10">
+                    <img src="./assets/Rectangle.png" class="rounded-lg shadow-2xl" />
+                    <div class="lg:w-2/5">
+                        <img src="./assets/Vector.png" alt="" class="lg:block hidden">
+                        <div>
+                            <button class="btn btn-small my-5 text-lg bg-white rounded-full"><small><i
+                                        class="fa-solid fa-arrow-right"></i></small>About Us</button>
+                        </div>
+
+                        <h1 class="text-4xl font-bold">We design thoughtful, liveable spaces</h1>
+                        <p class="py-6">
+                            The barn house captivates with its blend of rustic charm and
+                            modern sophistication, featuring weathered wood, sleek metal accents.
+                        </p>
+                        <div class="space-y-5">
+                            <div class="card card-side bg-base-100 shadow-xl pl-10">
+                                <figure>
+                                    <img src="./assets/commercial.png" alt="Movie" />
+                                </figure>
+                                <div class="card-body">
+                                    <h2 class="card-title">Commercial</h2>
+                                    <p>The barn house captivates with its blend of rustic charm and modern.</p>
+
+                                </div>
+                            </div>
+                            <div class="card card-side bg-base-100 shadow-xl pl-10">
+                                <figure>
+                                    <img src="./assets/residential.png" alt="Movie" />
+                                </figure>
+                                <div class="card-body">
+                                    <h2 class="card-title">Residential</h2>
+                                    <p>The barn house captivates with its blend of rustic charm and modern.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mx-auto py-12">
+                <div
+                    class="bg-white shadow-lg p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 rounded-lg justify-between gap-10">
+                    <div class="text-center">
+                        <div><i class="fa-solid fa-envelope text-3xl text-gray-400"></i></div>
+                        <div class="stat-value mt-3">235+</div>
+                        <div class="stat-desc">Client Review</div>
+                    </div>
+
+                    <div class="text-center">
+                        <div><i class="fa-solid fa-house text-3xl text-gray-400"></i></div>
+                        <div class="stat-value mt-3">50+</div>
+                        <div class="stat-desc">Work Departments</div>
+                    </div>
+
+                    <div class="text-center">
+                        <div><i class="fa-solid fa-user-group text-3xl text-gray-400"></i></div>
+                        <div class="stat-value mt-3">30+</div>
+                        <div class="stat-desc">Our Happy Client</div>
+                    </div>
+
+                    <div class="text-center">
+                        <div><i class="fa-solid fa-image text-3xl text-gray-400"></i></div>
+                        <div class="stat-value mt-3">305+</div>
+                        <div class="stat-desc">Staff Document</div>
+                    </div>
+                </div>
+        </section>
 
     </main>
 
