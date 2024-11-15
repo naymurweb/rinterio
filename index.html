@@ -28,7 +28,8 @@
                     colors: {
                         clifford: '#da373d',
                         "primary-color": 'rgb(171, 239, 95)',
-                        "primary-bg": 'rgba(171, 239, 95, 0.5)'
+                        "primary-bg": 'rgba(171, 239, 95, 0.5)',
+                        black: 'rgb(28, 28, 28);'
                     },
                     fontFamily: {
                         manrope: ["Manrope", "sans-serif"]
@@ -40,8 +41,57 @@
 
 </head>
 
-<body class="font-manrope bg-primary-color">
-    <header>
+<body class="font-manrope">
+    <header class="container mx-auto px-5 py-5 md:py-10">
+        <!-- navbar -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start md:justify-end flex-row-reverse w-full justify-between ">
+                <div class="dropdown block md:hidden">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow -left-8">
+                        <li class="font-bold"><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <a class="">
+                    <div class="flex items-center gap-3">
+                        <i
+                            class="fa-solid fa-arrow-right bg-primary-color text-xl -rotate-45 p-2 px-3 rounded-full"></i>
+                        <h3 class="font-bold text-3xl">Rinterio</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li class="font-bold"><a>Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end gap-2 md:flex hidden">
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-magnifying-glass bg-white border-2 text-lg p-1 px-2 rounded-full"></i>
+                    <i class="fa-solid fa-cart-shopping border-2 text-lg  p-1 px-2 rounded-full"></i>
+                </div>
+                <div class="btn rounded-full flex items-center gap-3 bg-primary-color">
+                    <h3 class="font-bold text-xl">Book Consult</h3>
+                    <i
+                        class="fa-solid fa-arrow-right bg-black text-white text-base -rotate-45 p-1 px-2 rounded-full"></i>
+                </div>
+            </div>
+        </div>
 
     </header>
 
